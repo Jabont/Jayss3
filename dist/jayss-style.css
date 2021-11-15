@@ -1,0 +1,176 @@
+/*--------- JaySS Blank and Ratio! ---------*/
+.blank{
+	--jss-ratio-w:1;
+	--jss-ratio-h:1;
+	--jss-ratio-pd-t:100%;
+	box-sizing: border-box;
+	display: inline-block;
+	position: relative;
+	aspect-ratio:var(--jss-ratio-w) / var(--jss-ratio-h);
+	padding-top: var(--jss-ratio-pd-t);
+	width: 100%;
+}
+.blank[data-ratio="10:2"]{
+	--jss-ratio-w:10;
+	--jss-ratio-h:2;
+	--jss-ratio-pd-t:20%;
+}
+
+.blank[data-ratio="10:4"]{
+	--jss-ratio-w:10;
+	--jss-ratio-h:4;
+	--jss-ratio-pd-t:40%;
+}
+
+.blank[data-ratio="2:1"]{
+	--jss-ratio-w:2;
+	--jss-ratio-h:1;
+	--jss-ratio-pd-t:50%;
+}
+
+.blank[data-ratio="facebook"]{
+	--jss-ratio-w:1200;
+	--jss-ratio-h:630;
+	--jss-ratio-pd-t:52.5%;
+}
+
+.blank[data-ratio="16:9"]{
+	--jss-ratio-w:16;
+	--jss-ratio-h:9;
+	--jss-ratio-pd-t:56.25%;
+}
+
+.blank[data-ratio="golden"]{
+	--jss-ratio-w:1.618;
+	--jss-ratio-h:1;
+	--jss-ratio-pd-t:61.805%;
+}
+
+.blank[data-ratio="16:10"]{
+	--jss-ratio-w:16;
+	--jss-ratio-h:10;
+	--jss-ratio-pd-t:62.5%;
+}
+
+.blank[data-ratio="3:2"]{
+	--jss-ratio-w:3;
+	--jss-ratio-h:2;
+	--jss-ratio-pd-t:66.666%;
+}
+
+.blank[data-ratio="4:3"]{
+	--jss-ratio-w:4;
+	--jss-ratio-h:3;
+	--jss-ratio-pd-t:75%;
+}
+
+.blank[data-ratio="5:4"]{
+	--jss-ratio-w:5;
+	--jss-ratio-h:4;
+	--jss-ratio-pd-t:80%;
+}
+
+.blank[data-ratio="1:1"]{
+	--jss-ratio-w:1;
+	--jss-ratio-h:1;
+	--jss-ratio-pd-t:100%;
+}
+
+.blank[data-ratio="2:10"]{
+	--jss-ratio-w:2;
+	--jss-ratio-h:10;
+	--jss-ratio-pd-t:500%;
+}
+
+.blank[data-ratio="4:10"]{
+	--jss-ratio-w:4;
+	--jss-ratio-h:10;
+	--jss-ratio-pd-t:250%;
+}
+
+.blank[data-ratio="1:2"]{
+	--jss-ratio-w:1;
+	--jss-ratio-h:2;
+	--jss-ratio-pd-t:200%;
+}
+
+.blank[data-ratio="facebook-vtc"]{
+	--jss-ratio-w:630;
+	--jss-ratio-h:1200;
+	--jss-ratio-pd-t:190.4762%;
+}
+
+.blank[data-ratio="9:16"]{
+	--jss-ratio-w:9;
+	--jss-ratio-h:16;
+	--jss-ratio-pd-t:177.777%;
+}
+
+.blank[data-ratio="golden-vtc"]{
+	--jss-ratio-w:1;
+	--jss-ratio-h:1.618;
+	--jss-ratio-pd-t:161.8033%;
+}
+
+.blank[data-ratio="10:16"]{
+	--jss-ratio-w:10;
+	--jss-ratio-h:16;
+	--jss-ratio-pd-t:160%;
+}
+
+.blank[data-ratio="2:3"]{
+	--jss-ratio-w:2;
+	--jss-ratio-h:3;
+	--jss-ratio-pd-t:150%;
+}
+
+.blank[data-ratio="3:4"]{
+	--jss-ratio-w:3;
+	--jss-ratio-h:4;
+	--jss-ratio-pd-t:133.333%;
+}
+
+.blank[data-ratio="4:5"]{
+	--jss-ratio-w:4;
+	--jss-ratio-h:5;
+	--jss-ratio-pd-t:125%;
+}
+.blank-inner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*padding: 1em;*/
+	background: #0003;
+	box-sizing: border-box;
+}
+
+/*--------- JaySS Image Background! ---------*/
+
+.bg-cover{
+	background-image: var(--bg);
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-contain{
+	background-image: var(--bg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bg-fixed{
+	background-attachment: fixed;
+}
+
+
+
+/*--------- JaySS Center! ---------*/
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

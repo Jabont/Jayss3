@@ -1,4 +1,252 @@
 @import 'jayss-size.css';
 /*
+==================================
 --------- JaySS Padding! ---------
+==================================
 .*/
+[class*="padding"]{
+	--jss-pd-hzt:var(--jsz-ab-m);
+	--jss-pd-vtc:var(--jsz-ab-m);
+	padding-top:var(--jss-pd-vtc);
+	padding-bottom:var(--jss-pd-vtc);
+	padding-left:var(--jss-pd-hzt);
+	padding-right:var(--jss-pd-hzt);
+	box-sizing: border-box;
+}
+.padding-0{
+	--jss-pd-hzt:0;
+	--jss-pd-vtc:0;
+}
+.padding-px{
+	--jss-pd-hzt:var(--jsz-ab-px);
+	--jss-pd-vtc:var(--jsz-ab-px);
+}
+.padding-xs{
+	--jss-pd-hzt:var(--jsz-ab-xs);
+	--jss-pd-vtc:var(--jsz-ab-xs);
+}
+.padding-vs{
+	--jss-pd-hzt:var(--jsz-ab-vs);
+	--jss-pd-vtc:var(--jsz-ab-vs);
+}
+.padding-s{
+	--jss-pd-hzt:var(--jsz-ab-s);
+	--jss-pd-vtc:var(--jsz-ab-s);
+}
+.padding-m,.padding{
+	--jss-pd-hzt:var(--jsz-ab-m);
+	--jss-pd-vtc:var(--jsz-ab-m);
+}
+.padding-rm{
+	--jss-pd-hzt:var(--jsz-ab-rm);
+	--jss-pd-vtc:var(--jsz-ab-rm);
+}
+.padding-l{
+	--jss-pd-hzt:var(--jsz-ab-l);
+	--jss-pd-vtc:var(--jsz-ab-l);
+}
+.padding-vl{
+	--jss-pd-hzt:var(--jsz-ab-vl);
+	--jss-pd-vtc:var(--jsz-ab-vl);
+}
+.padding-xl{
+	--jss-pd-hzt:var(--jsz-ab-xl);
+	--jss-pd-vtc:var(--jsz-ab-xl);
+}
+.padding-2xl{
+	--jss-pd-hzt:var(--jsz-ab-2xl);
+	--jss-pd-vtc:var(--jsz-ab-2xl);
+}
+.padding-3xl{
+	--jss-pd-hzt:var(--jsz-ab-3xl);
+	--jss-pd-vtc:var(--jsz-ab-3xl);
+}
+.padding-4xl{
+	--jss-pd-hzt:var(--jsz-ab-4xl);
+	--jss-pd-vtc:var(--jsz-ab-4xl);
+}
+.padding-5xl{
+	--jss-pd-hzt:var(--jsz-ab-5xl);
+	--jss-pd-vtc:var(--jsz-ab-5xl);
+}
+.padding-6xl{
+	--jss-pd-hzt:var(--jsz-ab-6xl);
+	--jss-pd-vtc:var(--jsz-ab-6xl);
+}
+
+/*--------- JaySS Padding Horizontal! ---------*/
+
+.padding-0-hzt{--jss-pd-hzt:0}
+.padding-px-hzt{--jss-pd-hzt:var(--jsz-ab-px)}
+.padding-xs-hzt{--jss-pd-hzt:var(--jsz-ab-xs)}
+.padding-vs-hzt{--jss-pd-hzt:var(--jsz-ab-vs)}
+.padding-s-hzt{--jss-pd-hzt:var(--jsz-ab-s)}
+.padding-m-hzt,.padding-hzt{--jss-pd-hzt:var(--jsz-ab-m)}
+.padding-rm-hzt{--jss-pd-hzt:var(--jsz-ab-rm)}
+.padding-l-hzt{--jss-pd-hzt:var(--jsz-ab-l)}
+.padding-vl-hzt{--jss-pd-hzt:var(--jsz-ab-vl)}
+.padding-xl-hzt{--jss-pd-hzt:var(--jsz-ab-xl)}
+.padding-2xl-hzt{--jss-pd-hzt:var(--jsz-ab-2xl)}
+.padding-3xl-hzt{--jss-pd-hzt:var(--jsz-ab-3xl)}
+.padding-4xl-hzt{--jss-pd-hzt:var(--jsz-ab-4xl)}
+.padding-5xl-hzt{--jss-pd-hzt:var(--jsz-ab-5xl)}
+.padding-6xl-hzt{--jss-pd-hzt:var(--jsz-ab-6xl)}
+
+
+/*--------- JaySS Padding Vertical! ---------*/
+
+.padding-0-vtc{--jss-pd-vtc:0}
+.padding-px-vtc{--jss-pd-vtc:var(--jsz-ab-px)}
+.padding-xs-vtc{--jss-pd-vtc:var(--jsz-ab-xs)}
+.padding-vs-vtc{--jss-pd-vtc:var(--jsz-ab-vs)}
+.padding-s-vtc{--jss-pd-vtc:var(--jsz-ab-s)}
+.padding-m-vtc,.padding-vtc{--jss-pd-vtc:var(--jsz-ab-m)}
+.padding-rm-vtc{--jss-pd-vtc:var(--jsz-ab-rm)}
+.padding-l-vtc{--jss-pd-vtc:var(--jsz-ab-l)}
+.padding-vl-vtc{--jss-pd-vtc:var(--jsz-ab-vl)}
+.padding-xl-vtc{--jss-pd-vtc:var(--jsz-ab-xl)}
+.padding-2xl-vtc{--jss-pd-vtc:var(--jsz-ab-2xl)}
+.padding-3xl-vtc{--jss-pd-vtc:var(--jsz-ab-3xl)}
+.padding-4xl-vtc{--jss-pd-vtc:var(--jsz-ab-4xl)}
+.padding-5xl-vtc{--jss-pd-vtc:var(--jsz-ab-5xl)}
+.padding-6xl-vtc{--jss-pd-vtc:var(--jsz-ab-6xl)}
+.no-pd{padding: 0}
+
+/*
+==================================
+--------- JaySS Margin! ---------
+==================================
+.*/
+[class*="margin"]{
+	--jss-mg-hzt:var(--jsz-ab-m);
+	--jss-mg-vtc:var(--jsz-ab-m);
+	margin-top:var(--jss-mg-vtc);
+	margin-bottom:var(--jss-mg-vtc);
+	margin-left:var(--jss-mg-hzt);
+	margin-right:var(--jss-mg-hzt);
+	box-sizing: border-box;
+}
+.margin-0{
+	--jss-mg-hzt:0;
+	--jss-mg-vtc:0;
+}
+.margin-px{
+	--jss-mg-hzt:var(--jsz-ab-px);
+	--jss-mg-vtc:var(--jsz-ab-px);
+}
+.margin-xs{
+	--jss-mg-hzt:var(--jsz-ab-xs);
+	--jss-mg-vtc:var(--jsz-ab-xs);
+}
+.margin-vs{
+	--jss-mg-hzt:var(--jsz-ab-vs);
+	--jss-mg-vtc:var(--jsz-ab-vs);
+}
+.margin-s{
+	--jss-mg-hzt:var(--jsz-ab-s);
+	--jss-mg-vtc:var(--jsz-ab-s);
+}
+.margin-m,.margin{
+	--jss-mg-hzt:var(--jsz-ab-m);
+	--jss-mg-vtc:var(--jsz-ab-m);
+}
+.margin-rm{
+	--jss-mg-hzt:var(--jsz-ab-rm);
+	--jss-mg-vtc:var(--jsz-ab-rm);
+}
+.margin-l{
+	--jss-mg-hzt:var(--jsz-ab-l);
+	--jss-mg-vtc:var(--jsz-ab-l);
+}
+.margin-vl{
+	--jss-mg-hzt:var(--jsz-ab-vl);
+	--jss-mg-vtc:var(--jsz-ab-vl);
+}
+.margin-xl{
+	--jss-mg-hzt:var(--jsz-ab-xl);
+	--jss-mg-vtc:var(--jsz-ab-xl);
+}
+.margin-2xl{
+	--jss-mg-hzt:var(--jsz-ab-2xl);
+	--jss-mg-vtc:var(--jsz-ab-2xl);
+}
+.margin-3xl{
+	--jss-mg-hzt:var(--jsz-ab-3xl);
+	--jss-mg-vtc:var(--jsz-ab-3xl);
+}
+.margin-4xl{
+	--jss-mg-hzt:var(--jsz-ab-4xl);
+	--jss-mg-vtc:var(--jsz-ab-4xl);
+}
+.margin-5xl{
+	--jss-mg-hzt:var(--jsz-ab-5xl);
+	--jss-mg-vtc:var(--jsz-ab-5xl);
+}
+.margin-6xl{
+	--jss-mg-hzt:var(--jsz-ab-6xl);
+	--jss-mg-vtc:var(--jsz-ab-6xl);
+}
+
+/*--------- JaySS margin Horizontal! ---------*/
+
+.margin-0-hzt{--jss-mg-hzt:0}
+.margin-px-hzt{--jss-mg-hzt:var(--jsz-ab-px)}
+.margin-xs-hzt{--jss-mg-hzt:var(--jsz-ab-xs)}
+.margin-vs-hzt{--jss-mg-hzt:var(--jsz-ab-vs)}
+.margin-s-hzt{--jss-mg-hzt:var(--jsz-ab-s)}
+.margin-m-hzt,.margin-hzt{--jss-mg-hzt:var(--jsz-ab-m)}
+.margin-rm-hzt{--jss-mg-hzt:var(--jsz-ab-rm)}
+.margin-l-hzt{--jss-mg-hzt:var(--jsz-ab-l)}
+.margin-vl-hzt{--jss-mg-hzt:var(--jsz-ab-vl)}
+.margin-xl-hzt{--jss-mg-hzt:var(--jsz-ab-xl)}
+.margin-2xl-hzt{--jss-mg-hzt:var(--jsz-ab-2xl)}
+.margin-3xl-hzt{--jss-mg-hzt:var(--jsz-ab-3xl)}
+.margin-4xl-hzt{--jss-mg-hzt:var(--jsz-ab-4xl)}
+.margin-5xl-hzt{--jss-mg-hzt:var(--jsz-ab-5xl)}
+.margin-6xl-hzt{--jss-mg-hzt:var(--jsz-ab-6xl)}
+
+
+/*--------- JaySS margin Vertical! ---------*/
+
+.margin-0-vtc{--jss-mg-vtc:0}
+.margin-px-vtc{--jss-mg-vtc:var(--jsz-ab-px)}
+.margin-xs-vtc{--jss-mg-vtc:var(--jsz-ab-xs)}
+.margin-vs-vtc{--jss-mg-vtc:var(--jsz-ab-vs)}
+.margin-s-vtc{--jss-mg-vtc:var(--jsz-ab-s)}
+.margin-m-vtc,.margin-vtc{--jss-mg-vtc:var(--jsz-ab-m)}
+.margin-rm-vtc{--jss-mg-vtc:var(--jsz-ab-rm)}
+.margin-l-vtc{--jss-mg-vtc:var(--jsz-ab-l)}
+.margin-vl-vtc{--jss-mg-vtc:var(--jsz-ab-vl)}
+.margin-xl-vtc{--jss-mg-vtc:var(--jsz-ab-xl)}
+.margin-2xl-vtc{--jss-mg-vtc:var(--jsz-ab-2xl)}
+.margin-3xl-vtc{--jss-mg-vtc:var(--jsz-ab-3xl)}
+.margin-4xl-vtc{--jss-mg-vtc:var(--jsz-ab-4xl)}
+.margin-5xl-vtc{--jss-mg-vtc:var(--jsz-ab-5xl)}
+.margin-6xl-vtc{--jss-mg-vtc:var(--jsz-ab-6xl)}
+.no-mg{margin: 0}
+
+/*--------- JaySS Height Space! ---------*/
+[class*="h-"]{
+	height:var(--jss-height);
+	box-sizing: border-box;
+}
+.h-0{--jss-height:0}
+.h-px{--jss-height:var(--jsz-ab-px)}
+.h-xs{--jss-height:var(--jsz-ab-xs)}
+.h-vs{--jss-height:var(--jsz-ab-vs)}
+.h-s{--jss-height:var(--jsz-ab-s)}
+.h-m{--jss-height:var(--jsz-ab-m)}
+.h-rm{--jss-height:var(--jsz-ab-rm)}
+.h-l{--jss-height:var(--jsz-ab-l)}
+.h-vl{--jss-height:var(--jsz-ab-vl)}
+.h-xl{--jss-height:var(--jsz-ab-xl)}
+.h-2xl{--jss-height:var(--jsz-ab-2xl)}
+.h-3xl{--jss-height:var(--jsz-ab-3xl)}
+.h-4xl{--jss-height:var(--jsz-ab-4xl)}
+.h-5xl{--jss-height:var(--jsz-ab-5xl)}
+.h-6xl{--jss-height:var(--jsz-ab-6xl)}
+.h-100{--jss-height:100%}
+.h-100vh{--jss-height:100vh;min-height: -webkit-fill-available}
+
+.min-h-100{min-height:100%}
+.full-h,.min-h-100vh{min-height:100vh;min-height: -webkit-fill-available}

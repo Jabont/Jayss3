@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jayss3 - CSS Framework</title>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="dist/jayss.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<style type="text/css">
+		div{
+			/*background: pink;*/
+			margin-bottom: 1em;
+		}
+	</style>
+	
+	<script type="text/javascript">
+		size = [0,'px','xs','vs','s','m','rm','l','vl','xl','2xl','3xl','4xl','5xl','6xl'];
+	</script>
+
+	<div id="the_blank1" style="width: 200px" ></div>
+	<script type="text/javascript">
+		let r1 = ["10:2","10:4","2:1","facebook","16:9","golden","16:10","3:2","4:3","5:4","1:1"];
+		html = ``
+		for(let r of r1){
+			html += `
+			<div class="blank bg-cover" data-ratio="${r}" style="background-color:#eee;--bg:url(https://source.unsplash.com/1200x600/?white)" >
+			<div class="blank-inner flex-center">${r}</div></div>
+			`
+		}
+		the_blank1.innerHTML = html
+	</script>
+
+	<div id="the_blank2" style="width: 200px" ></div>
+	<script type="text/javascript">
+		let r2 = ["4:5","3:4","2:3","10:16","golden-vtc","9:16","facebook-vtc","1:2","4:10","2:10"];
+		html = ``
+		for(let r of r2){
+			html += `
+			<div class="blank bg-cover" data-ratio="${r}" style="background-color:#eee;--bg:url(https://source.unsplash.com/1200x600/?yellow)" >
+			<div class="blank-inner flex-center">${r}</div></div>
+			`
+		}
+		the_blank2.innerHTML = html
+	</script>
+	<!-- Box -->
+
+	<pre id="box"></pre>
+	<script type="text/javascript">
+		html = ``
+		for(let r of r2){
+			wh = r.split(":")
+			html += `
+			.blank[data-ratio="${wh[0]}:${wh[1]}"]{
+				--jss-blank-w:${wh[0]};
+				--jss-blank-h:${wh[1]};
+				--jss-blank-pd-t:${(parseInt(wh[1]))/(parseInt(wh[0]))*100}%;
+			}
+			`
+		}
+		box.innerHTML = html
+	</script>
+</body>
+</html>
