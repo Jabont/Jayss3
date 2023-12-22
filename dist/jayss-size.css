@@ -10,15 +10,15 @@ xs	= 2px | .125rem
 vs 	= 4px | .250rem
 s 	= 6px | .375rem
 m 	= 12px | .75rem
-rm	= 16px | 1rem **
+rm	= 16px | 1.00rem **
 l 	= 24px | 1.50rem
 vl 	= 36px | 2.25rem
 xl	= 48px | 3.00rem
 2xl	= 64px | 4.00rem
-3xl	= 80px | 5.00rem
-4xl	= 96px | 6.00rem
-5xl	= 112px | 7.00rem
-6xl	= 128px | 8.00rem
+3xl	= 96px | 6.00rem
+4xl	= 144px | 9.00rem
+5xl	= 216px | 13.5rem
+6xl	= 256px | 16rem
 
 /*
 .
@@ -39,10 +39,10 @@ JaySS3 Variable Size
 	--jsz-ab-vl:36px;
 	--jsz-ab-xl:48px;
 	--jsz-ab-2xl:64px;
-	--jsz-ab-3xl:80px;
-	--jsz-ab-4xl:96px;
-	--jsz-ab-5xl:112px;
-	--jsz-ab-6xl:128px;
+	--jsz-ab-3xl:96px;
+	--jsz-ab-4xl:144px;
+	--jsz-ab-5xl:216px;
+	--jsz-ab-6xl:256px;
 
 	--jsz-re-px:.0625em;
 	--jsz-re-xs:.125em;
@@ -54,9 +54,9 @@ JaySS3 Variable Size
 	--jsz-re-vl:2.25em;
 	--jsz-re-xl:3em;
 	--jsz-re-2xl:4em;
-	--jsz-re-3xl:5em;
-	--jsz-re-4xl:6em;
-	--jsz-re-5xl:7em;
-	--jsz-re-6xl:8em;
+	--jsz-re-3xl:6em;
+	--jsz-re-4xl:9em;
+	--jsz-re-5xl:13.5em;
+	--jsz-re-6xl:16em;
 }
 

@@ -1,0 +1,462 @@
+/*
+=========================================================================
+Grid
+=========================================================================
+.
+-------------------------------------------------------------------------
+Grid | The Boxs container
+-------------------------------------------------------------------------*/
+theboxes{
+	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+	position: relative;
+	flex-wrap: wrap;
+	justify-content:flex-start;
+	align-items: flex-start;
+}
+theboxes.from-top{
+	flex-direction:column;
+}
+theboxes.from-left{
+	flex-direction:row;
+}
+theboxes.from-bottom{
+	flex-direction:column-reverse;
+}
+theboxes.from-right{
+	flex-direction:row-reverse;
+}
+theboxes.single{
+	flex-wrap:nowrap;
+}
+theboxes.multiple{
+	flex-wrap: wrap;
+}
+theboxes.top{
+	align-items: flex-start;
+}
+theboxes.bottom{
+	align-items: flex-end;
+}
+theboxes.middle{
+	align-items: center;
+}
+theboxes.rack{
+	align-items: stretch;
+}
+
+theboxes.eq > box{
+	flex-basis: 0;
+}
+theboxes.auto > box{
+	flex-basis: auto;
+}
+
+
+theboxes.left > box, .left{
+	justify-content:flex-start;
+}
+theboxes.right > box, .right{
+	justify-content:flex-end;
+}
+theboxes.center > box, .center{
+	justify-content:center;
+}
+theboxes.space > box, .space{
+	justify-content:space-between;
+}
+/*-------------------------------------------------------------------------
+Grid | BOX items
+-------------------------------------------------------------------------*/
+box{
+	flex-grow:1;
+	flex-basis: auto;
+	box-sizing: border-box;
+	overflow: hidden;
+	overflow: visible;
+	position: relative;
+}
+box[col="0.5"],
+theboxes[boxing="24"] > box{
+	max-width: 4.16666%;
+	width: 4.16666%;
+}
+box[col="1"],
+theboxes[boxing="12"] > box{
+	max-width: 8.33333%;
+	width: 8.33333%;
+}
+box[col="1.5"],
+theboxes[boxing="8"] > box{
+	max-width: 12.5%;
+	width: 12.5%;
+}
+box[col="2"],
+theboxes[boxing="6"] > box{
+	max-width: 16.66666%;
+	width: 16.66666%;
+}
+box[col="2.5"]{
+	max-width: 20.83333%;
+	width: 20.83333%;
+}
+theboxes[boxing="5"] > box{
+	max-width: 20%;
+	width: 20%;
+}
+box[col="3"],
+theboxes[boxing="4"] > box{
+	max-width: 25%;
+	width: 25%;
+}
+box[col="3.5"]{
+	max-width: 29.16666%;
+	width: 29.16666%;
+}
+box[col="4"],
+theboxes[boxing="3"] > box{
+	max-width: 33.33333%;
+	width: 33.33333%;
+}
+box[col="4.5"]{
+	max-width: 37.5%;
+	width: 37.5%;
+}
+box[col="5"]{
+	max-width: 41.66666%;
+	width: 41.66666%;
+}
+box[col="5.5"]{
+	max-width: 45.83333%;
+	width: 45.83333%;
+}
+box[col="6"],
+theboxes[boxing="2"] > box{
+	max-width: 50%;
+	width: 50%;
+}
+box[col="6.5"]{
+	max-width: 54.16666%;
+	width: 54.16666%;
+}
+box[col="7"]{
+	max-width: 58.33333%;
+	width: 58.33333%;
+}
+box[col="7.5"]{
+	max-width: 62.5%;
+	width: 62.5%;
+}
+box[col="8"]{
+	max-width: 66.66666%;
+	width: 66.66666%;
+}
+box[col="8.5"]{
+	max-width: 70.83333%;
+	width: 70.83333%;
+}
+box[col="9"]{
+	max-width: 75%;
+	width: 75%;
+}
+box[col="9.5"]{
+	max-width: 79.16666%;
+	width: 79.16666%;
+}
+box[col="10"]{
+	max-width: 83.33333%;
+	width: 83.33333%;
+}
+box[col="10.5"]{
+	max-width: 87.5%;
+	width: 87.5%;
+}
+box[col="11"]{
+	max-width: 91.66666%;
+	width: 91.66666%;
+}
+box[col="11.5"]{
+	max-width: 95.83333%;
+	width: 95.83333%;
+}
+box[col="12"],
+theboxes[boxing="1"] > box{
+	max-width: 100%;
+	width: 100%;
+}
+/*-------------------------------------------------------------------------
+Grid | Inner Box
+-------------------------------------------------------------------------*/
+.inner,inner{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	position: relative;
+	box-sizing: border-box;
+}
+.h-auto,.auto-vtc,.auto-h{
+	height: auto !important;
+}
+.auto-w,.auto-hzt{
+	width: auto !important;
+}
+/*-------------------------------------------------------------------------
+Grid | Space
+-------------------------------------------------------------------------*/
+
+/*Spacing*/
+/*===== Deafult - 12px / .75rem =====*/
+theboxes[class*="spacing"]{
+	width: calc(100% + (.375rem * 2));
+	margin-left: -.375rem;	
+}
+theboxes[class*="spacing"].-clip{
+	margin-top: -.375rem;
+	margin-bottom: -.375rem;
+}
+theboxes[class*="spacing"].-gap{
+	margin-top: .375rem;
+	margin-bottom: .375rem;
+}
+
+/*===== Size XS - 2px / .125rem =====*/
+theboxes[class*="spacing-xs"]{
+	width: calc(100% + (.125rem * 2));
+	margin-left: -.0625rem;	
+}
+theboxes[class*="spacing-xs"].-clip{
+	margin-top: -.0625rem;
+	margin-bottom: -.0625rem;
+}
+theboxes[class*="spacing-xs"].-gap{
+	margin-top: .0625rem;
+	margin-bottom: .0625rem;
+}
+theboxes.spacing-xs > box{
+	border: .0625rem solid transparent;
+}
+theboxes.spacing-xs-hzt > box{
+	border-left: .0625rem solid transparent;
+	border-right: .0625rem solid transparent;
+}
+theboxes.spacing-xs-vtc > box{
+	border-top: .0625rem solid transparent;
+	border-bottom: .0625rem solid transparent;
+}
+
+/*===== Size VS - 4px / .250rem =====*/
+theboxes[class*="spacing-vs"]{
+	width: calc(100% + (.125rem * 2));
+	margin-left: -.125rem;	
+}
+theboxes[class*="spacing-vs"].-clip{
+	margin-top: -.125rem;
+	margin-bottom: -.125rem;
+}
+theboxes[class*="spacing-vs"].-gap{
+	margin-top: .125rem;
+	margin-bottom: .125rem;
+}
+theboxes.spacing-vs > box{
+	border: .125rem solid transparent;
+}
+theboxes.spacing-vs-hzt > box{
+	border-left: .125rem solid transparent;
+	border-right: .125rem solid transparent;
+}
+theboxes.spacing-vs-vtc > box{
+	border-top: .125rem solid transparent;
+	border-bottom: .125rem solid transparent;
+}
+
+/*===== Size S - 6px / .375rem =====*/
+theboxes[class*="spacing-s"]{
+	width: calc(100% + (.1875rem * 2));
+	margin-left: -.1875rem;	
+}
+theboxes[class*="spacing-s"].-clip{
+	margin-top: -.1875rem;
+	margin-bottom: -.1875rem;
+}
+theboxes[class*="spacing-s"].-gap{
+	margin-top: .1875rem;
+	margin-bottom: .1875rem;
+}
+theboxes.spacing-s > box{
+	border: .1875rem solid transparent;
+}
+theboxes.spacing-s-hzt > box{
+	border-left: .1875rem solid transparent;
+	border-right: .1875rem solid transparent;
+}
+theboxes.spacing-s-vtc > box{
+	border-top: .1875rem solid transparent;
+	border-bottom: .1875rem solid transparent;
+}
+
+
+/*===== Size M - 12px / .75rem =====*/
+theboxes[class*="spacing-m"]{
+	width: calc(100% + (.375rem * 2));
+	margin-left: -.375rem;	
+}
+theboxes[class*="spacing-m"].-clip{
+	margin-top: -.375rem;
+	margin-bottom: -.375rem;
+}
+theboxes[class*="spacing-m"].-gap{
+	margin-top: .375rem;
+	margin-bottom: .375rem;
+}
+theboxes.spacing > box,
+theboxes.spacing-m > box{
+	border: .375rem solid transparent;
+}
+theboxes.spacing-hzt > box,
+theboxes.spacing-m-hzt > box{
+	border-left: .375rem solid transparent;
+	border-right: .375rem solid transparent;
+}
+theboxes.spacing-vtc > box,
+theboxes.spacing-m-vtc > box{
+	border-top: .375rem solid transparent;
+	border-bottom: .375rem solid transparent;
+}
+
+/*===== Size RM - 16px / 1rem =====*/
+theboxes[class*="spacing-rm"]{
+	width: calc(100% + (.5rem * 2));
+	margin-left: -.5rem;
+}
+theboxes[class*="spacing-rm"].-clip{
+	margin-top: -.5rem;
+	margin-bottom: -.5rem;
+}
+theboxes[class*="spacing-rm"].-gap{
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
+
+theboxes.spacing-rm > box{
+	border: .5rem solid transparent;
+}
+theboxes.spacing-rm-hzt > box{
+	border-left: .5rem solid transparent;
+	border-right: .5rem solid transparent;
+}
+theboxes.spacing-rm-vtc > box{
+	border-top: .5rem solid transparent;
+	border-bottom: .5rem solid transparent;
+}
+
+
+/*===== Size L - 24px / 1.5rem =====*/
+theboxes[class*="spacing-l"]{
+	width: calc(100% + (.75rem * 2));
+	margin-left: -.75rem;
+}
+theboxes[class*="spacing-l"].-clip{
+	margin-top: -.75rem;
+	margin-bottom: -.75rem;
+}
+theboxes[class*="spacing-l"].-gap{
+	margin-top: .75rem;
+	margin-bottom: .75rem;
+}
+
+theboxes.spacing-l > box{
+	border: .75rem solid transparent;
+}
+theboxes.spacing-l-hzt > box{
+	border-left: .75rem solid transparent;
+	border-right: .75rem solid transparent;
+}
+theboxes.spacing-l-vtc > box{
+	border-top: .75rem solid transparent;
+	border-bottom: .75rem solid transparent;
+}
+
+/*===== Size VL - 36px / 2.25rem =====*/
+theboxes[class*="spacing-vl"]{
+	width: calc(100% + (1.125rem * 2));
+	margin-left: -1.125rem;
+}
+theboxes[class*="spacing-vl"].-clip{
+	margin-top: -1.125rem;
+	margin-bottom: -1.125rem;
+}
+theboxes[class*="spacing-vl"].-gap{
+	margin-top: 1.125rem;
+	margin-bottom: 1.125rem;
+}
+
+theboxes.spacing-vl > box{
+	border: 1.125rem solid transparent;
+}
+theboxes.spacing-vl-hzt > box{
+	border-left: 1.125rem solid transparent;
+	border-right: 1.125rem solid transparent;
+}
+theboxes.spacing-vl-vtc > box{
+	border-top: 1.125rem solid transparent;
+	border-bottom: 1.125rem solid transparent;
+}
+
+/*===== Size XL - 48px / 3rem =====*/
+theboxes[class*="spacing-xl"]{
+	width: calc(100% + (1.5rem * 2));
+	margin-left: -1.5rem;
+}
+theboxes[class*="spacing-xl"].-clip{
+	margin-top: -1.5rem;
+	margin-bottom: -1.5rem;
+}
+theboxes[class*="spacing-xl"].-gap{
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+theboxes.spacing-xl > box{
+	border: 1.5rem solid transparent;
+}
+theboxes.spacing-xl-hzt > box{
+	border-left: 1.5rem solid transparent;
+	border-right: 1.5rem solid transparent;
+}
+theboxes.spacing-xl-vtc > box{
+	border-top: 1.5rem solid transparent;
+	border-bottom: 1.5rem solid transparent;
+}
+
+theboxes.spacing-vtc,
+theboxes.spacing-xs-vtc,
+theboxes.spacing-vs-vtc,
+theboxes.spacing-s-vtc,
+theboxes.spacing-m-vtc,
+theboxes.spacing-l-vtc,
+theboxes.spacing-vl-vtc,
+theboxes.spacing-xl-vtc{
+	width: 100%;
+	margin-left:0;
+}	
+
+
+.no-spacing{
+	width: 100% !important;
+	margin-left: 0 !important;	
+}
+theboxes.no-spacing box{
+	border: 0px !important;
+}
+
+theboxes.no-spacing.-clip{
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+theboxes.no-spacing.-clip box{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}

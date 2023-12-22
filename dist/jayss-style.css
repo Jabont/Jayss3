@@ -1,3 +1,70 @@
+/*.
+.
+=========================================================================
+	The List
+=========================================================================
+
+/*-------------------------------------------------------------------------
+The List | Unlist
+-------------------------------------------------------------------------*/
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+/*-------------------------------------------------------------------------
+The List | Listing
+-------------------------------------------------------------------------*/
+
+ul.list,
+ol.list {
+	padding-left: 1.7rem;
+}
+.list li{
+	list-style-type: inherit;
+}
+/*-------------------------------------------------------------------------
+The List | Article & Section
+-------------------------------------------------------------------------*/
+
+article ul li,
+article ol li{
+	line-height: 1.5;
+	margin-left: 2em;
+
+}
+article ul li {
+	list-style-type: disc;
+}
+
+article ol li {
+	list-style-type: decimal;
+}
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+ .clearfix {
+ 	*zoom: 1;
+ }
+
+
+
+
 /*--------- JaySS Blank and Ratio! ---------*/
 .blank{
 	--jss-ratio-w:1;
